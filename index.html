@@ -4,19 +4,14 @@
 <meta charset="UTF-8">
 <title>vinayak memory game</title>
 <style>
-body{background:#ccc;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:sans-serif}
-#g{display:grid;grid-template-columns:repeat(3,70px);gap:10px;margin-top:10px}
-.c{width:70px;height:70px;background:#777;cursor:pointer;transition:.2s}
 .c.on{background:var(--clr)}
-#msg{margin-top:15px;font-weight:bold;display:none}
-#r{margin-top:10px;padding:5px 10px;border:none;background:#555;color:#fff;cursor:pointer;display:none}
 </style>
 </head>
-<body>
+<body style="background:#ccc;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;font-family:sans-serif">
 <h3>memory game </h3>
-<div id="g"></div>
-<div id="msg">solved</div>
-<button id="r" onclick="location.reload()">reload</button>
+<div id="g" style="display:grid;grid-template-columns:repeat(3,70px);gap:10px;margin-top:10px"></div>
+<div id="msg" style="margin-top:15px;font-weight:bold;display:none">solved</div>
+<button id="r" style="margin-top:10px;padding:5px 10px;border:none;background:#555;color:#fff;cursor:pointer;display:none" onclick="location.reload()">reload</button>
 <script src='js.js'></script>
 </body>
 </html>
